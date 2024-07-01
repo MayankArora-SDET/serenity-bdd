@@ -7,7 +7,8 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(features = {"src/test/resources/features/"},
-glue = {"stepDefination"} , tags = "@API")
+glue = {"stepDefination"} , tags = "@API",  plugin = {"pretty", "json:target/cucumber-report/cucumber.json"},
+publish = true)
 public class Runner{
 
 }
