@@ -6,9 +6,8 @@ import io.cucumber.junit.CucumberOptions;
 import net.serenitybdd.cucumber.CucumberWithSerenity;
 
 @RunWith(CucumberWithSerenity.class)
-
 @CucumberOptions(features = {"src/test/resources/features/"},
-glue = {"stepDefination"} , tags = "@Login")
+glue = {"stepDefination"} , tags = "@API")
 public class Runner{
 
 }
