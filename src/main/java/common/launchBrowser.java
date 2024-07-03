@@ -1,6 +1,8 @@
 package common;
 
-public class launchBrowser extends net.serenitybdd.core.pages.PageObject {
+import net.serenitybdd.core.pages.PageObject;
+
+public class launchBrowser extends PageObject {
 	String baseURL;
 	public void launchSiteURL(String url) throws InterruptedException {
 		

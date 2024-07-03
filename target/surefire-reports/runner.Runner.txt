@@ -1,4 +1,22 @@
 -------------------------------------------------------------------------------
 Test set: runner.Runner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 46.575 s - in runner.Runner
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 19.81 s <<< FAILURE! -- in runner.Runner
+Login Functionality.Successfull Login -- Time elapsed: 10.28 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "net.serenitybdd.core.pages.WebElementFacade.sendKeys(java.lang.CharSequence[])" because "this.userName" is null
+	at pages.Login.sendData(Login.java:14)
+	at pages.Login$ByteBuddy$gyiLnueb.sendData$accessor$xRDvxDTS(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:18)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:18)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:425)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at pages.Login$ByteBuddy$gyiLnueb.sendData(Unknown Source)
+	at stepDefination.loginStepDefination.Enter_Creds(loginStepDefination.java:41)
+	at ✽.Enter Creds(file:///C:/Users/Mayank%20Arora/eclipse-workspace/Serenity-bdd/src/test/resources/features/login.feature:8)
+
